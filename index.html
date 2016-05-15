@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>部落抽签分组</title>
+
+    <!-- Bootstrap -->
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+
+  </head>
+  <body>
+    <div class="container">
+      <h1>部落抽签分组</h1>
+      
+      <form class="form-inline add-people">
+        <div class="form-group">
+          <label class="sr-only" for="people">People</label>
+          <input type="text" class="form-control" id="people" placeholder="输入一个ID">
+        </div>
+
+        <button type="submit" class="btn btn-default add-people-btn">添加</button>
+      </form>
+
+      <div class="players">
+        <h4>待抽签人选</h4>
+      </div>
+      
+      <form class="form-inline set-tribe">
+        <div class="form-group">
+          <label class="sr-only" for="tribe-count">Tribe</label>
+          <input type="text" class="form-control" id="tribe-count" placeholder="输入部落数目">
+        </div>
+
+        <button type="submit" class="btn btn-default set-tribe-btn">确定</button>
+      </form>
+      
+      <div class="tribes">
+        <h4>抽签结果</h4>
+        <!-- <div class="title">
+          <input type="text" placeholder="输入部落名" class="tribe-name">
+        </div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div> -->
+      </div>
+
+      <div class="clear"></div>
+      <button type="submit" class="btn btn-default random-draw">抽签</button>
+
+    </div>
+    
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script src="index.js"></script>
+  </body>
+</html>
